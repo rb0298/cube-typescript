@@ -1,0 +1,72 @@
+:root {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  background-color: lightblue;
+}
+.main-container {
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+.cardlist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-container {
+  margin: 10px auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25),
+    -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.card_img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+.card_img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+.cardlist-container .card_title {
+  color: white;
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: -80px;
+  height: 40px;
+}
+.cardlist-container .loading-more-btn {
+  margin: 0 auto;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  margin-top: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.error-msg {
+  font-size: 24px;
+  color: red;
+}
