@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Cube
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+Cube is a React-based application built on vite . It interacts with a customer and image api to fetch the data and display the results to the client.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+To install and run Cube App locally, follow these steps:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Clone the repository:
+git clone https://github.com/rb0298/cube-typescript.git
+cd cube-typescipt
 
-- Configure the top-level `parserOptions` property like this:
+Install dependencies:
+npm install
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+# Usage
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Run the development server:
+npm run dev
+
+Open your browser and navigate to http://localhost:port to view the application.
+Enter your desired filter options to fetch and display data in cards.
+
+# Technologies Used
+
+React
+HTML/CSS
+JavaScript
+
+# API Used
+
+photos : https://picsum.photos/v2/list?limit=9
+customerDetails : https://randomuser.me/api/
+
+# Folder Structure
+
+The folder structure of the Cube App is as follows:
+/public: Contains public assets like images.
+/src: Contains the React components, application logic, and API handling.
+/src/services: Contains service modules for API handling.
+/src/components: Contains reusable UI components.
+
+# Configuration
+
+No special configuration is required to run the Cube App.
+
+# Development
+
+To run the application in development mode:
+npm run dev
+
+# Note
+
+Don't have much familarity with TypeScript. Code in Javascript is also there. Please check this link
+https://github.com/rb0298/cube-javascript
